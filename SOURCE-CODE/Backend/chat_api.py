@@ -18,7 +18,7 @@ vectorstore = FAISS.load_local(vectorstore_path, embedding, allow_dangerous_dese
 print("✅ Vector store loaded.")
 
 # === Set Groq API Key ===
-GROQ_API_KEY = "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"  # 🔴 Replace with your key
+GROQ_API_KEY = "Enter your api key"  # 🔴 Replace with your key
 
 # === Input Schema ===
 class Question(BaseModel):
@@ -66,3 +66,4 @@ User Question:
 """
     answer = ask_groq_mistral(prompt)
     return {"answer": answer}
+
